@@ -1,16 +1,26 @@
-## Hi there 👋
+```go
+package filipejohansson
 
-<!--
-**FilipeJohansson/FilipeJohansson** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+var (
+	Name     = "Filipe Johansson"
+	Title    = "Software Engineer"
+	Location = "Porto Alegre, Brazil"
 
-Here are some ideas to get you started:
+	WorkingOn = []string{
+		"Vane — a Go-first web framework targeting WebAssembly",
+		"Compiler and developer tooling",
+	}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+	Learning = []string{
+		"Compiler Design",
+		"Framework Architecture",
+		"WebSockets",
+	}
+
+	Languages = []string{"Go", "Java", "TypeScript"}
+	Frontend  = []string{"React", "Angular", "Next.js"}
+	Backend   = []string{"Go", "Java", "Node.js", "REST APIs", "WebSockets"}
+	Databases = []string{"PostgreSQL", "MySQL", "MongoDB"}
+	Tools     = []string{"Git", "Docker", "CI/CD"}
+)
+```
