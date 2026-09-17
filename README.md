@@ -1,26 +1,32 @@
 ```go
 package filipejohansson
 
-var (
-	Name     = "Filipe Johansson"
-	Title    = "Software Engineer"
-	Location = "Porto Alegre, Brazil"
+type Developer struct {
+	Name, Title, Location string
+	WorkingOn, Learning   []string
+	Skills                map[string][]string
+}
 
-	WorkingOn = []string{
-		"Vane — a Go-first web framework targeting WebAssembly",
-		"Compiler and developer tooling",
-	}
+var Me = Developer{
+	Name:     "Filipe Johansson",
+	Title:    "Software Engineer",
+	Location: "Porto Alegre, Brazil",
 
-	Learning = []string{
-		"Compiler Design",
-		"Framework Architecture",
-		"WebSockets",
-	}
+	WorkingOn: []string{
+		"Vane — Go-first web framework for WebAssembly",
+		"Compiler & developer tooling",
+	},
 
-	Languages = []string{"Go", "Java", "TypeScript"}
-	Frontend  = []string{"React", "Angular", "Next.js"}
-	Backend   = []string{"Go", "Java", "Node.js", "REST APIs", "WebSockets"}
-	Databases = []string{"PostgreSQL", "MySQL", "MongoDB"}
-	Tools     = []string{"Git", "Docker", "CI/CD"}
-)
+	Learning: []string{
+		"Compiler Design", "Framework Architecture", "WebSockets",
+	},
+
+	Skills: map[string][]string{
+		"Languages": {"Go", "Java", "TypeScript"},
+		"Frontend":  {"React", "Angular", "Next.js"},
+		"Backend":   {"Go", "Java", "Node.js", "REST APIs", "WebSockets"},
+		"Database":  {"PostgreSQL", "MySQL", "MongoDB"},
+		"Tools":     {"Git", "Docker", "CI/CD"},
+	},
+}
 ```
